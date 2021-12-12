@@ -1,5 +1,6 @@
 from django.db import models
 from teacher.models import Teacher
+from django.forms import CheckboxSelectMultiple
 from student.models import Student
 
 # Create your models here.
