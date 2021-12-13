@@ -7,7 +7,7 @@ from student.models import Student
 class Subject(models.Model):
     name = models.CharField(max_length=50)
     teacher = models.ForeignKey(Teacher, null=True, blank=False, on_delete=models.SET_NULL)
-    student = models.ManyToManyField(Student, blank=False)
+    student = models.ManyToManyField(Student, blank=True)
 
     def __str__(self):
         return self.name
